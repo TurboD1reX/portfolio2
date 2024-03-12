@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Contact</title>
+    
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,1000;1,9..40,100;1,9..40,400;1,9..40,600;1,9..40,700;1,9..40,800&family=Exo+2:wght@600&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:wght@600&family=Teko:wght@300;400;500;600;700&family=Timmana&family=Titan+One&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Navigation Bar --> 
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand brand-img" href="index.html" ><img src="img/logoname.png" class="d-inline-block align-bottom" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="link-navbar">Home</a> 
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="link-navbar">Projects</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="link-navbar">About</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="contact.html" class="link-navbar">Contact</a> 
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"><button class="cv-download">Download CV</button></a>
+                        </li>
+                    </ul>
+            </div>
+            </nav>
+            
+            <!-- Main Section -->
+            <!-- Content -->
+            <main>
+            <section>
+                    <div class="title-content">Let's chat. Tell me about your project.</div>
+                    <p class="content">Let's create something together 🤘</p>
+                    <div class="mail"><i class="fa fa-envelope"></i><span>Mail me at<br><b style="color:#e83144">egor.kryvoi@gmail.com</b></span></div>
+            </section>
+            <!-- Form-->
+            <form class="col-sm-11 col-md-3" action="php/contact.php" method="POST">
+                <div class="title-form">Send me a message🚀</div>
+            <div class="input">
+                <input type="text"name="first_name" required autocomplete="off">
+                <label for="name">Full name*</label>
+            </div>
+
+            <div class="input">
+                <input type="tel" name="e-mail" required autocomplete="off">
+                <label for="surname">Phone Number</label>
+            </div>
+            <div class="input">
+                <input type="text"  name="e-mail" required autocomplete="off">
+                <label for="surname">Company name</label>
+            </div>
+            <div class="input">
+                <input type="e-mail" name="e-mail" required autocomplete="off">
+                <label for="surname">Email</label>
+            </div> 
+            <div class="input">
+                <textarea type="text" id="form-input" name="content" required autocomplete="off"></textarea>
+                <label for="text">Content</label>
+            </div>
+            
+                <input type="submit" value="reset">
+                <input type="submit" value="submit">
+
+            </form>
+        </main>
+            <!-- Footer -->
+            <footer class="col-sm-12">
+                <hr>
+                <div class="container-media-copy">
+                    <div class="copyright">&copy; 2023-2024. All rights reserved.<br>Powered by <a href="https://egorkryvoi.pl">egorkryvoi.pl</a></div>
+                    <div class="social-media">
+                        <a href="https://github.com/TurboD1reX" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a>
+                        <a href="https://www.instagram.com/dshigit17/" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100072679096032" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+                        <a href="https://twitter.com/dshigit17" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

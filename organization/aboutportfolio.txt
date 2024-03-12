@@ -1,0 +1,3 @@
+3 фотки текст 
+нажимать на фотки можна и там будет фотка больше и append.child()
+в контейнере insert.before(container-photo,body).
