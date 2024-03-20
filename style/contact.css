@@ -5,33 +5,56 @@
 body{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='900' preserveAspectRatio='none' viewBox='0 0 1920 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1167%26quot%3b)' fill='none'%3e%3cpath d='M432.12 965.69C679.68 930.31 769.36 377.18 1219.03 348.1 1668.7 319.02 1798.7 90.47 2005.94 87.1' stroke='rgba(232%2c 49%2c 68%2c 0.27)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1037.34 1076.95C1251.32 1010.18 1307.96 402.98 1619.9 395.37 1931.84 387.76 2045.57 625.05 2202.46 629.37' stroke='rgba(232%2c 49%2c 68%2c 0.27)' stroke-width='2'%3e%3c/path%3e%3cpath d='M915.16 1009.38C1109.5 970.58 1198.55 474.04 1498.07 472.16 1797.59 470.28 1921.42 727.29 2080.98 733.16' stroke='rgba(232%2c 49%2c 68%2c 0.27)' stroke-width='2'%3e%3c/path%3e%3cpath d='M719.38 953.02C945.66 924.78 1033.82 438.72 1453.37 411.5 1872.92 384.28 1991.11 137.15 2187.36 132.5' stroke='rgba(232%2c 49%2c 68%2c 0.27)' stroke-width='2'%3e%3c/path%3e%3cpath d='M144.45 1058.71C418.8 1035.01 566.06 491.33 1076.87 472.34 1587.67 453.35 1767.82 222.55 2009.28 220.34' stroke='rgba(232%2c 49%2c 68%2c 0.27)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1167'%3e%3crect width='1920' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
+
+
+
+
+
+
+
+
 nav {
-    height: 100px;
-    text-transform: uppercase;
-    background-color:white;
+  position:sticky;
+  height: 100px;
+  text-transform: uppercase;
+  background-color: white;
 }
 
 .link-navbar {
-    color: #2E2723;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    margin: 20px;
-    transition:ease 0.3s;
-    padding:3px 20px;
-    border-radius:10px;
+  color: #2E2723;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px;
+  transition:ease 0.3s;
+  padding:4px 25px;
+  border-radius:10px;
 }
 
 .link-navbar:hover {
-    transition:ease 0.25s;
-    background-color: #e83144;
-    color:white;
+  transition:ease 0.25s;
+  background-color: #e83144;
+  color:white;
 }
 
 nav img {
-    max-height: 55px;
-    margin: 1.5rem 0 0 5rem;
+  max-height: 55px;
+  margin: 1.5rem 0 0 5rem;
 }
+#navbarNav{
+  margin-left:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .cv-download {
     margin-left:50px;
     padding: 5px 20px;
