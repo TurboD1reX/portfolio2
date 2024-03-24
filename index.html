@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egor Kryvoi | Home ⋄ Programmer ⋄ Junior ⋄ Portfolio </title>
     
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="icon" type="image/x-icon" href="img/bigElogo.png">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -39,12 +39,12 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="link-navbar">Projects</a>
+                            <div class="link-navbar" onclick="projectsRedirect()">Projects</div>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="link-navbar">About</a>
+                            <div class="link-navbar" onclick="aboutRedirect()">About</div>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -54,7 +54,7 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                           <!-- href="other/Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--> <a><button class="cv-download">Download CV</button></a>
+                           <!-- href="other/Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--> <button class="cv-download" onclick="IncAttentionCV()">Download CV</button>
                         </li>
                     </ul>
             </div>
@@ -63,15 +63,15 @@
             <!-- Introducing -->
             <div class="introduction-container">
             <section class="introduction col-sm-12 col-md-8">
-                <article class="col-md-6 col-sm-12">
-                    <h1>Hello, I'm <b>Egor</b> Kryvoi</h1>
+                <article class=" col-sm-12 col-md-6">
+                    <h1>Hello, I'm <b class="nameSurname">Egor</b> Kryvoi</h1>
                     <h4>Simply put, I'm novice programmer</h4>
                     <p>
-                        In my portfolio, you can see my journey into coding and software development sphere. I've picked specific projects to show my dedication to learning and creating practical solutions.
+                        In my portfolio, you can see my journey into coding and software development sphere. I've picked specific projects to show my dedication to learning and creating practical solutions.<b style="color:rgb(165, 68, 68);"> If you want get my CV text me at <a href="contact.html" style="color:rgb(165, 68, 68);">Contact</a></b>.
                     </p>
-                   <!--href="Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--><a><button class="cbtn btn-primary cv-download-article">Download CV</button></a>
+                   <!--href="Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--><a onclick="IncAttentionCV()"><button class="cbtn btn-primary cv-download-article">Download CV</button></a>
                 </article>
-                <img src="img/ryangosling.png" id="main-img" class="img-fluid" alt="Portfolio Image">
+                <img src="img/mainImg.png" id="main-img" class="img-fluid" alt="Portfolio Image">
             </section>
         </div>
         <!-- Projects -->
@@ -80,39 +80,39 @@
                 <div class="title-project">my projects</div>
                 <div class="projects-img">
                     <div class="img-container"onclick="projectsDetail(1)">
-                    <img src="img/projects/ksmlabel/1.png" class="img img-fluid" alt="KSM Label">
+                    <img src="img/projects/labels/1.png" class="img img-fluid" alt="KSM Label">
                     <figcaption>KSM Label</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(2)">
-                    <img src="img/projects/colorJS/1.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/2.png" class="img img-fluid" alt="">
                     <figcaption>Choosing color JS</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(3)">
-                    <img src="img/projects/dbd/1.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/3.png" class="img img-fluid" alt="">
                     <figcaption>Marvel heroes</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(4)">
-                    <img src="img/projects/form-db/1.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/4.png" class="img img-fluid" alt="">
                     <figcaption>Form Database</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(5)">
-                    <img src="img/projects/fukaj/1.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/5.png" class="img img-fluid" alt="">
                     <figcaption>Fukaj</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(6)">
-                    <img src="img/projects/game/1.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/6.png" class="img img-fluid" alt="">
                     <figcaption>Game</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(7)">
-                    <img src="img/projects/meble/1.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/7.png" class="img img-fluid" alt="">
                     <figcaption>Meble "Aura"</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(8)">
-                        <img src="img/projects/miwatch/1.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/8.png" class="img img-fluid" alt="">
                     <figcaption>Mi Watch "Ivory"</figcaption>
                     </div>
                     <div class="img-container" onclick="projectsDetail(9)">
-                    <img src="img/projects/miband/1.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/9.png" class="img img-fluid" alt="">
                     <figcaption>Mi Band</figcaption>
                     </div>
                 </div></div>
@@ -120,14 +120,14 @@
             </section>
             <div class="about-container">
                 <!--About-->
- <main class="col-sm-12 col-md-7">  
+ <main class="main col-sm-12 col-md-7">  
     <div class="title-main">About me</div>
 <div class="about">
-                <img src="img/test.jpg" alt="">
+                <img src="img/aboutImg.png" class="col-md-5"alt="">
                     <div class="container-content col-sm-12 col-md-6">
                         <div class="title-content">Egor Kryvoi</div>
                         <p class="content-about">
-                            I was born in Ukraine, where my passion for programming began in early childhood. Since a young age, I've been exploring the intricacies of coding and developing my skills in this field. Programming has become not only a hobby for me but also a way of expressing myself and pursuing professional growth.
+                           My passion for programming began in early childhood. Since a young age, I've been exploring the intricacies of coding and developing my skills in this field. Programming has become not only a hobby for me but also a way of expressing myself and pursuing professional growth.
                         </p>
                         <p class="content-about">
                             In addition to coding, I enjoy watching content on the Twitch platform. I often spend time following my favorite streamers and discovering new games and technologies. Twitch has become not only a source of entertainment for me but also an inspiration for creating my own projects related to gaming and streaming.

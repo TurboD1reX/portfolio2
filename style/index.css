@@ -14,7 +14,7 @@
 
 
 nav {
-    position:sticky;
+    position:sticky !important;
     height: 100px;
     text-transform: uppercase;
     background-color: white;
@@ -104,14 +104,13 @@ article {
     transition:ease 0.4s;
 }
 .cv-download-article:hover{
-    transform: scale(0.9986666);
     color:#632027;
     transition:ease 0.4s;
 }
 article h1{
     font-size:50px;
 }
-article b{
+.nameSurname{
     color:#e83144;
 }
 .container-media-copy{
@@ -120,7 +119,7 @@ justify-content: space-between;
 align-items: center;
 }
 #main-img {
-    width: 24rem;
+    width: 20rem;
     border-radius:5em;
     filter: drop-shadow( 5px 5px 30px rgb(167, 73, 73));
 }
@@ -168,14 +167,16 @@ align-items: center;
 }
 .img{
     border:2px solid white;
-
     cursor: pointer;
     transition: ease 0.5s;
+
 }
 .img:hover{
     transition: ease 0.5s;
     border-color:#e83144;
     transform: scale(0.98);
+
+
 }
 
 
@@ -190,7 +191,7 @@ align-items: center;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1030%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M1966.94 573.32C1821.81 572.39 1684.64 438.32 1402.34 438.32 1120.04 438.32 1141.44 581.46 837.73 573.32 534.03 565.18 470.17 38.41 273.13-10.8' stroke='rgba(255%2c 0%2c 0%2c 0.42)' stroke-width='2'%3e%3c/path%3e%3cpath d='M2272.02 825.23C2125.44 824.32 1986.73 690.23 1701.44 690.23 1416.16 690.23 1482.07 868.54 1130.87 825.23 779.66 781.92 805.77-8.67 560.29-147.2' stroke='rgba(255%2c 0%2c 0%2c 0.42)' stroke-width='2'%3e%3c/path%3e%3cpath d='M2303.83 443.18C2073.99 449.67 1894.21 793.32 1451.51 788.78 1008.81 784.24 888.88 27.13 599.19-36.64' stroke='rgba(255%2c 0%2c 0%2c 0.42)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1923.53 472.55C1737.43 477.86 1607.22 764.69 1233.8 753.35 860.38 742.01 803.77-12.5 544.07-102.09' stroke='rgba(255%2c 0%2c 0%2c 0.42)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1977.47 381.28C1780.08 383.37 1527.85 607.53 1217.98 597.28 908.11 587.03 1007.3-1.11 838.24-108.76' stroke='rgba(255%2c 0%2c 0%2c 0.42)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1030'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 main{
-    padding:15px 30px;
+    padding:15px 0;
     background-color:rgba(255,255,255,0.6) ;
     margin:150px auto;
     width:fit-content;  
@@ -204,11 +205,6 @@ main{
     justify-content: space-around;
     align-items: center; 
     
-}
-.about > img{
-
-    width:450px;
-    height:450px;
 }
 .title-content{
     text-align: center;
@@ -251,15 +247,15 @@ main{
     margin: 20px auto;
 }
 .img-bigger-projects-concret{
-box-shadow: 0px 0px 20px 1px white;
-margin:10px 0;
+border:3px solid white;
+margin:20px 0;
 border-radius:10px;
 cursor: pointer !important;
 }
 .img-smaller-projects-concret{
-box-shadow: 0px 0px 20px 1px white;
+border:3px solid white;
 border-radius:10px;
-margin:0 5px;
+margin:0 10px;
 cursor: pointer !important;
 }
 .content-text-projects-concret{
@@ -308,7 +304,16 @@ border-radius:30px;
     cursor:pointer;
     transition: ease 0.3s;
 }
-.close-icon-openedimg:hover{
+.download-icon{
+    font-size:30px;
+    position:fixed;
+    margin:30px 50px;
+    top:80px; left:20px;
+    color:white;
+    cursor:pointer;
+    transition: ease 0.3s;
+}
+.close-icon-openedimg:hover,.download-icon:hover{
     transition: ease 0.3s;
     color:rgb(145, 145, 145);
 }
@@ -319,12 +324,10 @@ border-radius:30px;
     display:none;
     justify-content:center;
     align-items: center;
-    background-color:rgba(0,0,0,0.9);
+    background-color:black;
     z-index:10;
-      
 }
 .containerImgOpen > img{
-    width:100em;
     margin: 5px;
     border-radius: 10px;
     border:6px solid #e83143c2;
@@ -338,6 +341,48 @@ border-radius:30px;
 
 
 
+
+
+.dec-button{
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    transition: ease 0.3s;
+    border-radius: 3px;
+    padding:10px;
+    height:90px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dec-button:hover{
+    transition: ease 0.3s;
+    color:rgb(145, 145, 145);
+    background-color:rgb(223, 223, 223);
+}
+
+.attention-cv {
+        position: fixed;
+        top: 80%;
+        display:flex;
+        justify-content: stretch;
+        align-items: center;
+        right: 0;
+        color:#ffffff;
+        background-color:#e83144;
+        width: 400px;
+        height: 110px;
+        padding:10px;
+        transform: translate(100%);
+        transition:ease 0.3s;
+      }
+.content-attention-cv{
+font-size:larger;
+margin:10px 0;
+padding:10px;
+}
 
 
 
@@ -378,22 +423,53 @@ footer {
 }
 
 @media only screen and (max-width: 1023px) {
+    
+
+.img-bigger-projects-concret{
+height:170px;
+margin:20px auto;
+}
+.img-smaller-projects-concret{
+    height:170px;
+    margin:20px auto;
+}
+.temp-concret-img{
+    display:block;
+    justify-content: space-around;
+    align-items: center;
+}
+.close-icon{
+    margin:30px 10px;
+}
+.close-icon-openedimg{
+    top:10px; left:20px;
+}
+.containerImgOpen{
+background-color:black;  
+}
+.containerImgOpen > img{
+width:100%;
+}
     #navbarNav {
         background-color: #ffffff;
         margin-left:0px;
-border-bottom:1px solid #e83143c2;
         
     }
     nav img{
         margin-left:30px;
     }
     .link-navbar {
-padding:0px 20px;
-font-size:30px;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 0px;
+        width:fit-content;  
+
     }
+    
     .cv-download{
         width:90%;
-        margin:10px auto 10px 20px;
+        font-size: 30px;
+        margin:10px 20px 20px 20px;
     }
     footer{
         height: fit-content;
@@ -424,7 +500,7 @@ font-size:30px;
         display: block;
     }
     .about > img{
-    margin:auto !important;
+    margin:20px !important;
         width:368px;
         height:368px;
     }
