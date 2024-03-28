@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egor Kryvoi | Contact ⋄ Programmer ⋄ Junior ⋄ Portfolio </title>
+    <title>Contact ⋄ Programmer ⋄ Junior ⋄ Portfolio </title>
     
     <link rel="icon" type="image/x-icon" href="img/bigElogo.png">
     
@@ -16,7 +16,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,1000;1,9..40,100;1,9..40,400;1,9..40,600;1,9..40,700;1,9..40,800&family=Exo+2:wght@600&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:wght@600&family=Teko:wght@300;400;500;600;700&family=Timmana&family=Titan+One&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/contact.css">
 </head>
@@ -25,39 +26,43 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Navigation Bar --> 
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light position-fixed shadow-sm p-0 mb-5 " style="z-index:20">
                 <a class="navbar-brand brand-img" href="index.html" ><img src="img/logoname.png" class="d-inline-block align-bottom" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="navbar-icon">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="toggle">
+                          <div class="bar bar--top"></div>
+                          <div class="bar bar--middle"></div>
+                          <div class="bar bar--bottom"></div>
+                        </label>
+                    </div>
+                  </button>
+                
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="index.html" class="link-navbar">Home</a> 
+                        <li class="nav-item display-flex  ">
+                            <a href="index.html" class="nav-link text-black">Home</a> 
                         </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="index.html" class="link-navbar">Projects</a>
+                   
+                        <li class="nav-item display-flex ">
+                            <a class="nav-link text-black" onclick="projectsRedirect()">Projects</a>
                         </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="index.html" class="link-navbar">About</a>
+                    
+                        <li class="nav-item display-flex ">
+                            <a class="nav-link text-black" onclick="aboutRedirect()">About</a>
+    
+                   
+                        <li class="nav-item display-flex  ">
+                            <a href="contact.html" class="nav-link text-black">Contact</a> 
                         </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="contact.html" class="link-navbar">Contact</a> 
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                           <!-- href="other/Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--> <a onclick="IncAttentionCV()"><button class="cv-download">Download CV</button></a>
+                        <li class="nav-item d-flex p-2" >
+                            <a class="cv-download" onclick="IncAttentionCV()">Download CV</a>
                         </li>
                     </ul>
             </div>
             </nav>
+            
             
             <!-- Main Section -->
             <!-- Content -->
@@ -74,7 +79,6 @@
                 <input type="text"name="first_name" required autocomplete="off">
                 <label for="name">Full name*</label>
             </div>
-
             <div class="input">
                 <input type="tel" name="phone_number" required autocomplete="off">
                 <label for="tel">Phone Number</label>
@@ -91,18 +95,17 @@
                 <textarea type="text" id="form-input" name="content" required autocomplete="off"></textarea>
                 <label for="text">Content</label>
             </div>
-            <input type="hidden" name="_redirect" >
-                <input type="submit" value="reset">
-                <input type="submit" value="submit" onclick="submitDone()">
-
+            <div class="d-flex">
+                <input type="reset" value="reset">
+                <input type="submit" value="submit">
+</div>
             </form>
-
         </main>
             <!-- Footer -->
             <footer class="col-sm-12">
                 <hr>
                 <div class="container-media-copy">
-                    <div class="copyright">&copy; 2023-2024. All rights reserved.<br>Powered by <a href="https://egorkryvoi.pl">egorkryvoi.pl</a></div>
+                    <div class="copyright">&copy; 2023-2024. All rights reserved.<br>Powered by <a href="egorkryvoi.pl">egorkryvoi.pl</a></div>
                     <div class="social-media">
                         <a href="https://github.com/TurboD1reX" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a>
                         <a href="https://www.instagram.com/dshigit17/" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>

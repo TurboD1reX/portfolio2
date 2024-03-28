@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egor Kryvoi | Home ⋄ Programmer ⋄ Junior ⋄ Portfolio </title>
+    <title>Home ⋄ Programmer ⋄ Junior ⋄ Portfolio </title>
     
     <link rel="icon" type="image/x-icon" href="img/bigElogo.png">
     
@@ -14,10 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,1000;1,9..40,100;1,9..40,400;1,9..40,600;1,9..40,700;1,9..40,800&family=Exo+2:wght@600&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:wght@600&family=Teko:wght@300;400;500;600;700&family=Timmana&family=Titan+One&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/index.css">
 </head>
@@ -26,52 +31,54 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Navigation Bar -->
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light position-fixed shadow-sm p-0 mb-5 " style="z-index:20">
                 <a class="navbar-brand brand-img" href="index.html" ><img src="img/logoname.png" class="d-inline-block align-bottom" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="navbar-icon">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="toggle">
+                          <div class="bar bar--top"></div>
+                          <div class="bar bar--middle"></div>
+                          <div class="bar bar--bottom"></div>
+                        </label>
+                    </div>
+                  </button>
+                
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="index.html" class="link-navbar">Home</a> 
+                        <li class="nav-item display-flex  ">
+                            <a href="index.html" class="nav-link text-black">Home</a> 
                         </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <div class="link-navbar" onclick="projectsRedirect()">Projects</div>
+                   
+                        <li class="nav-item display-flex ">
+                            <a class="nav-link text-black" onclick="projectsRedirect()">Projects</a>
                         </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <div class="link-navbar" onclick="aboutRedirect()">About</div>
+                    
+                        <li class="nav-item display-flex ">
+                            <a class="nav-link text-black" onclick="aboutRedirect()">About</a>
+    
+                   
+                        <li class="nav-item display-flex  ">
+                            <a href="contact.html" class="nav-link text-black">Contact</a> 
                         </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="contact.html" class="link-navbar">Contact</a> 
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                           <!-- href="other/Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--> <button class="cv-download" onclick="IncAttentionCV()">Download CV</button>
+                        <li class="nav-item d-flex p-2" >
+                            <a class="cv-download" onclick="IncAttentionCV()">Download CV</a>
                         </li>
                     </ul>
             </div>
             </nav>
-            
             <!-- Introducing -->
             <div class="introduction-container">
-            <section class="introduction col-sm-12 col-md-8">
-                <article class=" col-sm-12 col-md-6">
+            <section class="introduction d-flex justify-content-center col-md-5">
+                <article class=" col-sm-12 col-md-11">
                     <h1>Hello, I'm <b class="nameSurname">Egor</b> Kryvoi</h1>
                     <h4>Simply put, I'm novice programmer</h4>
                     <p>
-                        In my portfolio, you can see my journey into coding and software development sphere. I've picked specific projects to show my dedication to learning and creating practical solutions.<b style="color:rgb(165, 68, 68);"> If you want get my CV text me at <a href="contact.html" style="color:rgb(165, 68, 68);">Contact</a></b>.
+                        In my portfolio, you can see my journey into coding and software development sphere. I've picked specific projects to show my dedication to learning and creating practical solutions.
                     </p>
-                   <!--href="Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--><a onclick="IncAttentionCV()"><button class="cbtn btn-primary cv-download-article">Download CV</button></a>
+                    <!--href="Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--><a href="contact.html"><button class="cbtn btn-primary cv-download-article">Contact</button></a>
                 </article>
-                <img src="img/mainImg.png" id="main-img" class="img-fluid" alt="Portfolio Image">
+                <img src="img/mainImg.png" id="main-img" class="img-fluid " alt="Portfolio Image">
             </section>
         </div>
         <!-- Projects -->
@@ -80,67 +87,68 @@
                 <div class="title-project">my projects</div>
                 <div class="projects-img">
                     <div class="img-container"onclick="projectsDetail(1)">
-                    <img src="img/projects/labels/1.png" class="img img-fluid" alt="KSM Label">
+                    <img src="img/projects/labels/1.png" class="img img-fluid rounded" alt="KSM Label">
                     <figcaption>KSM Label</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(2)">
-                    <img src="img/projects/labels/2.png" class="img img-fluid" alt="">
-                    <figcaption>Choosing color JS</figcaption>
+                    <img src="img/projects/labels/2.png" class="img img-fluid rounded" alt="">
+                    <figcaption>Jewellery website</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(3)">
-                    <img src="img/projects/labels/3.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/3.png" class="img img-fluid rounded" alt="">
                     <figcaption>Marvel heroes</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(4)">
-                    <img src="img/projects/labels/4.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/4.png" class="img img-fluid rounded" alt="">
                     <figcaption>Form Database</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(5)">
-                    <img src="img/projects/labels/5.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/5.png" class="img img-fluid rounded" alt="">
                     <figcaption>Fukaj</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(6)">
-                    <img src="img/projects/labels/6.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/6.png" class="img img-fluid rounded" alt="">
                     <figcaption>Game</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(7)">
-                    <img src="img/projects/labels/7.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/7.png" class="img img-fluid rounded" alt="">
                     <figcaption>Meble "Aura"</figcaption>
                     </div>
                     <div class="img-container"onclick="projectsDetail(8)">
-                    <img src="img/projects/labels/8.png" class="img img-fluid" alt="">
+                    <img src="img/projects/labels/8.png" class="img img-fluid rounded" alt="">
                     <figcaption>Mi Watch "Ivory"</figcaption>
                     </div>
                     <div class="img-container" onclick="projectsDetail(9)">
-                    <img src="img/projects/labels/9.png" class="img img-fluid" alt="">
-                    <figcaption>Mi Band</figcaption>
+                    <img src="img/projects/labels/9.png" class="img img-fluid rounded" alt="">
+                    <figcaption>Tomatos website</figcaption>
                     </div>
                 </div></div>
                 
             </section>
-            <div class="about-container">
+            <div class="about-container ">
                 <!--About-->
- <main class="main col-sm-12 col-md-7">  
-    <div class="title-main">About me</div>
-<div class="about">
-                <img src="img/aboutImg.png" class="col-md-5"alt="">
-                    <div class="container-content col-sm-12 col-md-6">
-                        <div class="title-content">Egor Kryvoi</div>
-                        <p class="content-about">
-                           My passion for programming began in early childhood. Since a young age, I've been exploring the intricacies of coding and developing my skills in this field. Programming has become not only a hobby for me but also a way of expressing myself and pursuing professional growth.
-                        </p>
-                        <p class="content-about">
-                            In addition to coding, I enjoy watching content on the Twitch platform. I often spend time following my favorite streamers and discovering new games and technologies. Twitch has become not only a source of entertainment for me but also an inspiration for creating my own projects related to gaming and streaming.
-                        </p>
-                        <p class="content-about">
-                            Outside of my digital pursuits, I relish spending time outdoors with friends, exploring the surrounding nature, and being active in the fresh air. Despite my proficiency in four languages, including advanced levels.
-                        </p>
-                        <a href="https://www.instagram.com/dshigit17/" class="content-link" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100072679096032" class="content-link" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="content-link" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+                <main class="main container">
+                    <div class="title-main mb-5">About me</div>
+                    <div class="d-md-flex justify-content-center mt-5">
+                        <img src="img/aboutImg.png" class="col-md-4 img-fluid me-4" style="filter: drop-shadow( 5px 5px 30px rgb(167, 73, 73));border-radius:6em 1em;"alt="">
+                        <div class="container-content col-md-6">
+                            <div class="title-content">Egor Kryvoi</div>
+                            <p class="content-about">
+                                My passion for programming began in early childhood. Since a young age, I've been exploring the intricacies of coding and developing my skills in this field. Programming has become not only a hobby for me but also a way of expressing myself and pursuing professional growth.
+                            </p>
+                            <p class="content-about">
+                                In addition to coding, I enjoy watching content on the Twitch platform. I often spend time following my favorite streamers and discovering new games and technologies. Twitch has become not only a source of entertainment for me but also an inspiration for creating my own projects related to gaming and streaming.
+                            </p>
+                            <p class="content-about">
+                                Outside of my digital pursuits, I relish spending time outdoors with friends, exploring the surrounding nature, and being active in the fresh air. Despite my proficiency in four languages, including advanced levels.
+                            </p>
+                            <a href="https://www.instagram.com/dshigit17/" class="content-link" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100072679096032" class="content-link" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="content-link" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+                        </div>
                     </div>
-            </div>
-</main>
+                </main>
+                
 </div>
             <!-- Footer -->
             <footer class="col-sm-12">

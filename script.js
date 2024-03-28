@@ -8,12 +8,12 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">KSM LABEL</div>
+            <div class="title-concret mb-5">KSM LABEL</div>
             <div class="img-container col-sm-12">
-            <img src="img/projects/ksmlabel/1.png" class="img-bigger-projects-concret col-md-12" onclick="openImg('img/projects/ksmlabel/1.png','1.png')"  alt="">
-            <div class="temp-concret-img">
-            <img src="img/projects/ksmlabel/2.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/ksmlabel/2.png','2.png')" alt="">
-            <img src="img/projects/ksmlabel/3.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/ksmlabel/3.png','3.png')" alt="">
+            <img src="img/projects/ksmlabel/1.png" class="img-bigger-projects-concret img-fluid col-md-12" onclick="openImg('img/projects/ksmlabel/1.png','1.png')"  alt="">
+            <div class="display-flex justify-content-center">
+            <img src="img/projects/ksmlabel/2.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/ksmlabel/2.png','2.png')" alt="">
+            <img src="img/projects/ksmlabel/3.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/ksmlabel/3.png','3.png')" alt="">
             </div>
             </div>    
             <p class="content-text-projects-concret">
@@ -33,23 +33,19 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">Choosing color JS</div>
+            <div class="title-concret mb-5">Jewellery website</div>
             <div class="img-container col-sm-12">
-            <img src="img/projects/colorJS/1.png" class="img-bigger-projects-concret col-md-12" onclick="openImg('img/projects/colorJS/1.png','1.png')"  alt="">
-            <div class="temp-concret-img">
-            <img src="img/projects/colorJS/2.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/colorJS/2.png','2.png')" alt="">
-            <img src="img/projects/colorJS/3.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/colorJS/3.png','3.png')" alt="">
+            <img src="img/projects/bizuteria/1.png" class="img-bigger-projects-concret img-fluid col-md-12" onclick="openImg('img/projects/bizuteria/1.png','1.png')"  alt="">
+            <div class="display-flex justify-content-center">
+            <img src="img/projects/bizuteria/2.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/bizuteria/2.png','2.png')" alt="">
+            <img src="img/projects/bizuteria/3.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/bizuteria/3.png','3.png')" alt="">
             </div>
             </div>    
+   
             <p class="content-text-projects-concret">
-            The Choosing Color JS task was a classroom assignment focusing on JavaScript. 
-            Its goal was to have students apply their JavaScript knowledge to build a project centered around color selection. 
-            They were tasked with creating a user interface allowing interactive color selection and real-time display of changes.
+            Project created for my classmate on database lections.
             </p>
-            <p class="content-text-projects-concret">
-            Initially, students had to design a basic layout for the color selection interface using HTML and CSS. Then, they implemented JavaScript functionality to enable dynamic color changes based on user input. 
-            This exercise provided practical experience in integrating HTML, CSS, and JavaScript for creating interactive web applications.
-            </p>
+
             </div>
             </div>`;
             break;
@@ -58,12 +54,12 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">Marvel heroes</div>
+            <div class="title-concret mb-5">Marvel heroes</div>
             <div class="img-container col-sm-12">
-            <img src="img/projects/dbd/1.png" class="img-bigger-projects-concret col-md-12" onclick="openImg('img/projects/dbd/1.png','1.png')"  alt="">
-            <div class="temp-concret-img">
-            <img src="img/projects/dbd/2.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/dbd/2.png','2.png')" alt="">
-            <img src="img/projects/dbd/3.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/dbd/3.png','3.png')" alt="">
+            <img src="img/projects/dbd/1.png" class="img-bigger-projects-concret img-fluid col-md-12" onclick="openImg('img/projects/dbd/1.png','1.png')"  alt="">
+            <div class="display-flex justify-content-center">
+            <img src="img/projects/dbd/2.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/dbd/2.png','2.png')" alt="">
+            <img src="img/projects/dbd/3.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/dbd/3.png','3.png')" alt="">
             </div>
             </div>    
             <p class="content-text-projects-concret">
@@ -82,10 +78,10 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">Form Database</div>
+            <div class="title-concret mb-5">Form Database</div>
             <div class="img-container col-sm-12">
-            <img src="img/projects/form-db/1.png" class="img-bigger-projects-concret col-md-12" onclick="openImg('img/projects/form-db/1.png','1.png')"  alt="">
-            <div class="temp-concret-img">
+            <img src="img/projects/form-db/1.png" class="img-bigger-projects-concret img-fluid col-md-12" onclick="openImg('img/projects/form-db/1.png','1.png')"  alt="">
+            <div class="display-flex justify-content-center">
 
             </div>
             </div>    
@@ -102,11 +98,11 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">Fukaj</div>
+            <div class="title-concret mb-5">Fukaj</div>
 
-            <div class="temp-concret-img col-sm-12">
-            <img src="img/projects/fukaj/1.png" class="img-smaller-projects-concret col-sm-12 col-md-8" onclick="openImg('img/projects/fukaj/1.png','1.png')" alt="">
-            <img src="img/projects/fukaj/2.png" class="img-smaller-projects-concret col-sm-12 col-md-8" onclick="openImg('img/projects/fukaj/2.png','2.png')" alt="">
+            <div class="display-flex justify-content-center">
+            <img src="img/projects/fukaj/1.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-8" onclick="openImg('img/projects/fukaj/1.png','1.png')" alt="">
+            <img src="img/projects/fukaj/2.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-8" onclick="openImg('img/projects/fukaj/2.png','2.png')" alt="">
             </div>
             <p class="content-text-projects-concret">
             This project was made for counting down to concerts using JavaScript.
@@ -120,12 +116,12 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">Game</div>
+            <div class="title-concret mb-5">Game</div>
             <div class="img-container col-sm-12">
-            <img src="img/projects/game/1.png" class="img-bigger-projects-concret col-md-12" onclick="openImg('img/projects/game/1.png','1.png')"  alt="">
-            <div class="temp-concret-img">
-            <img src="img/projects/game/2.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/game/2.png','2.png')" alt="">
-            <img src="img/projects/game/3.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/game/3.png','3.png')" alt="">
+            <img src="img/projects/game/1.png" class="img-bigger-projects-concret img-fluid col-md-12" onclick="openImg('img/projects/game/1.png','1.png')"  alt="">
+            <div class="display-flex justify-content-center">
+            <img src="img/projects/game/2.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/game/2.png','2.png')" alt="">
+            <img src="img/projects/game/3.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/game/3.png','3.png')" alt="">
             </div>
             </div>    
             <p class="content-text-projects-concret">
@@ -142,12 +138,12 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">Meble "Aura"</div>
+            <div class="title-concret mb-5">Meble "Aura"</div>
             <div class="img-container col-sm-12">
-            <img src="img/projects/meble/1.png" class="img-bigger-projects-concret col-md-12" onclick="openImg('img/projects/meble/1.png','1.png')"  alt="">
-            <div class="temp-concret-img">
-            <img src="img/projects/meble/2.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/meble/2.png','2.png')" alt="">
-            <img src="img/projects/meble/3.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/meble/3.png','3.png')" alt="">
+            <img src="img/projects/meble/1.png" class="img-bigger-projects-concret img-fluid col-md-12" onclick="openImg('img/projects/meble/1.png','1.png')"  alt="">
+            <div class="display-flex justify-content-center">
+            <img src="img/projects/meble/2.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/meble/2.png','2.png')" alt="">
+            <img src="img/projects/meble/3.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/meble/3.png','3.png')" alt="">
             </div>
             </div>    
             <p class="content-text-projects-concret">
@@ -161,12 +157,12 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">Mi Watch "Ivory"</div>
+            <div class="title-concret mb-5">Mi Watch "Ivory"</div>
             <div class="img-container col-sm-12">
-            <img src="img/projects/miwatch/1.png" class="img-bigger-projects-concret col-md-12" onclick="openImg('img/projects/miwatch/1.png','1.png')"  alt="">
-            <div class="temp-concret-img">
-            <img src="img/projects/miwatch/2.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/miwatch/2.png','2.png')" alt="">
-            <img src="img/projects/miwatch/3.png" class="img-smaller-projects-concret col-sm-12 col-md-6" onclick="openImg('img/projects/miwatch/3.png','3.png')" alt="">
+            <img src="img/projects/miwatch/1.png" class="img-bigger-projects-concret img-fluid col-md-12" onclick="openImg('img/projects/miwatch/1.png','1.png')"  alt="">
+            <div class="display-flex justify-content-center">
+            <img src="img/projects/miwatch/2.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/miwatch/2.png','2.png')" alt="">
+            <img src="img/projects/miwatch/3.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/miwatch/3.png','3.png')" alt="">
             </div>
             </div>    
             <p class="content-text-projects-concret">
@@ -183,15 +179,17 @@ function projectsDetail(x) {
             <div class="concret">
             <span class="close-icon" onclick="closeProjectDetails()">✖</span>
             <div class="concret-container col-sm-12 col-md-6">
-            <div class="title-concret">Mi Band</div>
-            <div class="temp-concret-img col-sm-12">
-            <img src="img/projects/miband/1.png" class="img-smaller-projects-concret col-sm-12 col-md-8" onclick="openImg('img/projects/miband/1.png','1.png')" alt="">
-            <img src="img/projects/miband/2.png" class="img-smaller-projects-concret col-sm-12 col-md-8" onclick="openImg('img/projects/miband/2.png','2.png')" alt="">
+            <div class="title-concret mb-5 ">Tomatos website</div>
+            <div class="img-container col-sm-12">
+            <img src="img/projects/pomidory/1.png" class="img-bigger-projects-concret img-fluid col-sm-12 col-md-12" onclick="openImg('img/projects/pomidory/1.png','1.png')"  alt="">
+            <div class="display-flex justify-content-center">
+            <img src="img/projects/pomidory/2.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/pomidory/2.png','2.png')" alt="">
+            <img src="img/projects/pomidory/3.png" class="img-smaller-projects-concret img-fluid col-sm-12 col-md-6" onclick="openImg('img/projects/pomidory/3.png','3.png')" alt="">
             </div>
-   
+            </div> 
             <p class="content-text-projects-concret">
-            The project, which also included the Mi Band, was completed in just 11 minutes. 
-            This rapid development highlights my efficiency and understanding of the task at hand. Despite the short timeframe, the project was thorough, reflecting my ability to swiftly comprehend and execute concepts.
+            The project, which also created for lessons was completed in just 11 minutes. 
+
             </p>
 
             </div>
@@ -207,43 +205,44 @@ function closeProjectDetails(){
     <div class="title-project">my projects</div>
     <div class="projects-img">
         <div class="img-container"onclick="projectsDetail(1)">
-        <img src="img/projects/ksmlabel/1.png" class="img img-fluid" alt="KSM Label">
+        <img src="img/projects/labels/1.png" class="img img-fluid rounded" alt="KSM Label">
         <figcaption>KSM Label</figcaption>
         </div>
         <div class="img-container"onclick="projectsDetail(2)">
-        <img src="img/projects/colorJS/1.png" class="img img-fluid" alt="">
-        <figcaption>Choosing color JS</figcaption>
+        <img src="img/projects/labels/2.png" class="img img-fluid rounded" alt="">
+        <figcaption>Jewellery website</figcaption>
         </div>
         <div class="img-container"onclick="projectsDetail(3)">
-        <img src="img/projects/dbd/1.png" class="img img-fluid" alt="">
+        <img src="img/projects/labels/3.png" class="img img-fluid rounded" alt="">
         <figcaption>Marvel heroes</figcaption>
         </div>
         <div class="img-container"onclick="projectsDetail(4)">
-        <img src="img/projects/form-db/1.png" class="img img-fluid" alt="">
+        <img src="img/projects/labels/4.png" class="img img-fluid rounded" alt="">
         <figcaption>Form Database</figcaption>
         </div>
         <div class="img-container"onclick="projectsDetail(5)">
-        <img src="img/projects/fukaj/1.png" class="img img-fluid" alt="">
+        <img src="img/projects/labels/5.png" class="img img-fluid rounded" alt="">
         <figcaption>Fukaj</figcaption>
         </div>
         <div class="img-container"onclick="projectsDetail(6)">
-        <img src="img/projects/game/1.png" class="img img-fluid" alt="">
+        <img src="img/projects/labels/6.png" class="img img-fluid rounded" alt="">
         <figcaption>Game</figcaption>
         </div>
         <div class="img-container"onclick="projectsDetail(7)">
-        <img src="img/projects/meble/1.png" class="img img-fluid" alt="">
+        <img src="img/projects/labels/7.png" class="img img-fluid rounded" alt="">
         <figcaption>Meble "Aura"</figcaption>
         </div>
         <div class="img-container"onclick="projectsDetail(8)">
-            <img src="img/projects/miwatch/1.png" class="img img-fluid" alt="">
+        <img src="img/projects/labels/8.png" class="img img-fluid rounded" alt="">
         <figcaption>Mi Watch "Ivory"</figcaption>
         </div>
         <div class="img-container" onclick="projectsDetail(9)">
-        <img src="img/projects/miband/1.png" class="img img-fluid" alt="">
-        <figcaption>Mi Band</figcaption>
-            </div>
+        <img src="img/projects/labels/9.png" class="img img-fluid rounded" alt="">
+        <figcaption>Tomatos website</figcaption>
         </div>
     </div>
+</div>
+    
     `;
 }
 const body = document.querySelector('body');
@@ -251,13 +250,16 @@ const mainContainer = document.querySelector(".container-fluid");
 const containerImg = document.createElement('div');
 containerImg.classList.add('containerImgOpen');
 body.insertBefore(containerImg, mainContainer);
+const navigator = document.querySelector('nav');
 
 function openImg(img,concreteImg) {
     containerImg.innerHTML = `<span class='close-icon-openedimg' onclick='closeImg()'>✖</span><img src='${img}' class='col-md-10'> <a href="${img}" download="${concreteImg}"><i class='fa fa-download download-icon'></i></a>`;
     containerImg.style.display = "flex";
+    navigator.style.zIndex="0";
 }
 function closeImg(){
     containerImg.style.display = 'none';
+    navigator.style.zIndex="20";
 }
 
 
@@ -276,8 +278,14 @@ function aboutRedirect(){
 const attentionDiv = document.createElement('div');
 attentionDiv.classList.add('attention-cv');
 attentionDiv.innerHTML = `
-    <div class='dec-button' onclick='DecAttentionCV()'>✖</div>
-    <div class='content-attention-cv'>Send a message then I'll send you my CV!</div>
+<div class="alert alert-danger d-flex position-fixed align-items-center col-sm-12 col-md-4" role="alert">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+    <div class="d-flex">
+  <div>Send an message at <a href="contact.html">contact</a> then I'll send you my CV </div><span onclick="DecAttentionCV()">✖</span>
+    </div>
+</div>
 `;
 body.appendChild(attentionDiv);
 
@@ -287,7 +295,7 @@ function IncAttentionCV(){
     attentionDiv.style.transform  = 'translate(0%)';
 }
 function DecAttentionCV() {
-    attentionDiv.style.transform  = 'translate(100%)';
+    attentionDiv.style.transform  = 'translate(-100%)';
 }
 setInterval(DecAttentionCV, 7000);
 
@@ -311,7 +319,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
             <div class="content-submit-done">Your message has been sent. Thank you!</div>
             <a href="index.html">Back to homepage.</a>
             </div>`;
-            alert("okej");
         } else {
             console.error("Error:", response);
         }
