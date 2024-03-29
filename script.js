@@ -296,8 +296,9 @@ function IncAttentionCV(){
 }
 function DecAttentionCV() {
     attentionDiv.style.transform  = 'translate(-100%)';
+
 }
-setInterval(DecAttentionCV, 7000);
+setInterval(DecAttentionCV, 6000);
 
 
 
