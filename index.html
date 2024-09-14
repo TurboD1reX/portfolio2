@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home ⋄ Programmer ⋄ Junior ⋄ Portfolio </title>
+    <title>Home ⋄ Portfolio </title>
     
     <link rel="icon" type="image/x-icon" href="img/bigElogo.png">
     
@@ -16,16 +16,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,1000;1,9..40,100;1,9..40,400;1,9..40,600;1,9..40,700;1,9..40,800&family=Exo+2:wght@600&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:wght@600&family=Teko:wght@300;400;500;600;700&family=Timmana&family=Titan+One&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style/public.css">
     <link rel="stylesheet" href="style/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +28,7 @@
         <div class="row">
             <!-- Navigation Bar -->
             <nav class="navbar navbar-expand-lg navbar-light position-fixed shadow p-0 mb-5 " style="z-index:20">
-                <a class="navbar-brand brand-img" href="index.html" ><img src="img/logoname.png" class="d-inline-block align-bottom" alt=""></a>
+                <a class="navbar-brand brand-img" href="index.html" ><img src="img/logo.png" class="d-inline-block align-bottom" alt=""> <span> gor.kryvoi@gmail.com</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="navbar-icon">
                         <input type="checkbox" id="checkbox">
@@ -52,11 +47,11 @@
                         </li>
                    
                         <li class="nav-item display-flex ">
-                            <a class="nav-link text-black" onclick="projectsRedirect()">Projects</a>
+                            <a href="#projects" class="nav-link text-black">Projects</a>
                         </li>
                     
                         <li class="nav-item display-flex ">
-                            <a class="nav-link text-black" onclick="aboutRedirect()">About</a>
+                            <a href="#about" class="nav-link text-black">About</a>
     
                    
                         <li class="nav-item display-flex  ">
@@ -68,93 +63,104 @@
                     </ul>
             </div>
             </nav>
-            <!-- Introducing -->
-            <div class="introduction-container">
-            <section class="introduction display-flex justify-content-center col-sm-12 col-md-5">
-                <article class="col-md-12">
-                    <h1>Hello, I'm <b class="nameSurname">Egor</b> Kryvoi</h1>
-                    <h4>Simply put, I'm novice programmer</h4>
-                    <p>
-                        In my portfolio, you can see my journey into coding and software development sphere. I've picked specific projects to show my dedication to learning and creating practical solutions.
-                    </p>
-                    <!--href="Egor_Kryvoi_CV.pdf" download="Egor_Kryvoi_CV.pdf"--><a href="contact.html"><button class="cbtn btn-primary cv-download-article">Contact</button></a>
-                </article>
-                <img src="img/mainImg.png" id="main-img" class="img-fluid" alt="Portfolio Image">
-            </section>
-        </div>
-        <!-- Projects -->
-            <section class="projects col-sm-12 col-md-6">
-                <div class="projects-container">
-                <div class="title-project">my projects</div>
-                <div class="projects-img">
-                    <div class="img-container"onclick="projectsDetail(1)">
-                    <img src="img/projects/labels/1.png" class="img img-fluid rounded" alt="KSM Label">
-                    <figcaption>KSM Label</figcaption>
+
+            <div class="main-container col-sm-12 col-md-8">
+                <div class="article col-sm-12 col-md-6">
+                    <h3>I am <b>Egor Kryvoi</b></h3>
+                    <h1 class="typewriter"></h1>
+                    <p class="mt-2 mb-4 col-sm-12 col-md-11">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+                    <button type="button" class="downloadcv-button">Download CV <i class=""></i></button>
+                </div>
+                <img src="img/mainImg.png" class="main-image img img-fluid"alt="img main">
+            </div>
+
+
+
+
+
+            <div class="project-container">
+                <div class="sub-title">Projects</div>
+                <div class="title">My Recent Projects</div>
+                <div class="under-title-projects">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</div>
+                <div class="projects  col-md-7 col-sm-12">
+                    <div class="project-card col-sm-12 col-md-12 " onclick="">
+                        <img src="img/random test.webp" class="img-project img-fluid col-md-11 rounded-3" alt="img project">
+                        <div class="content-box">Follow us Test lol test</div>
                     </div>
-                    <div class="img-container"onclick="projectsDetail(2)">
-                    <img src="img/projects/labels/2.png" class="img img-fluid rounded" alt="">
-                    <figcaption>Jewellery website</figcaption>
+                    <div class="project-card col-sm-12 col-md-12 " onclick="">
+                        <img src="img/random test.webp" class="img-project img-fluid col-md-11 rounded-3" alt="img project">
+                        <div class="content-box">Follow us Test lol test</div>
                     </div>
-                    <div class="img-container"onclick="projectsDetail(3)">
-                    <img src="img/projects/labels/3.png" class="img img-fluid rounded" alt="">
-                    <figcaption>Marvel heroes</figcaption>
+                    <div class="project-card col-sm-12 col-md-12 " onclick="">
+                        <img src="img/random test.webp" class="img-project img-fluid col-md-11 rounded-3" alt="img project">
+                        <div class="content-box">Follow us Test lol test</div>
                     </div>
-                    <div class="img-container"onclick="projectsDetail(4)">
-                    <img src="img/projects/labels/4.png" class="img img-fluid rounded" alt="">
-                    <figcaption>Form Database</figcaption>
+                    <div class="project-card col-sm-12 col-md-12 " onclick="">
+                        <img src="img/random test.webp" class="img-project img-fluid col-md-11 rounded-3" alt="img project">
+                        <div class="content-box">Follow us Test lol test</div>
                     </div>
-                    <div class="img-container"onclick="projectsDetail(5)">
-                    <img src="img/projects/labels/5.png" class="img img-fluid rounded" alt="">
-                    <figcaption>Fukaj</figcaption>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="skills-container">
+                <div class="title">My skills</div>
+                <div class="skills">
+                    <div class="skill-card">
+                        <div class="skill-minicontainer">
+                        <img src="" alt="skill 1">
+                        <div class="skill-percentage">80%</div>
                     </div>
-                    <div class="img-container"onclick="projectsDetail(6)">
-                    <img src="img/projects/labels/6.png" class="img img-fluid rounded" alt="">
-                    <figcaption>Game</figcaption>
+                    <figcaption>Test language</figcaption>
                     </div>
-                    <div class="img-container"onclick="projectsDetail(7)">
-                    <img src="img/projects/labels/7.png" class="img img-fluid rounded" alt="">
-                    <figcaption>Meble "Aura"</figcaption>
+
+                    <div class="skill-card">
+                        <div class="skill-minicontainer">
+                        <img src="" alt="skill 1">
+                        <div class="skill-percentage">80%</div>
                     </div>
-                    <div class="img-container"onclick="projectsDetail(8)">
-                    <img src="img/projects/labels/8.png" class="img img-fluid rounded" alt="">
-                    <figcaption>Mi Watch "Ivory"</figcaption>
+                    <figcaption>Test language</figcaption>
                     </div>
-                    <div class="img-container" onclick="projectsDetail(9)">
-                    <img src="img/projects/labels/9.png" class="img img-fluid rounded" alt="">
-                    <figcaption>Tomatos website</figcaption>
+
+                    <div class="skill-card">
+                        <div class="skill-minicontainer">
+                        <img src="" alt="skill 1">
+                        <div class="skill-percentage">80%</div>
                     </div>
-                </div></div>
-                
-            </section>
-            <div class="about-container ">
-                <!--About-->
-                <main class="main container">
-                    <div class="title-main mb-5">About me</div>
-                    <div class="d-md-flex justify-content-center mt-5">
-                        <img src="img/aboutImg.png" class="col-md-4 img-fluid me-4" style="filter: drop-shadow( 5px 5px 30px rgb(167, 73, 73));border-radius:6em 1em;"alt="">
-                        <div class="container-content col-md-6">
-                            <div class="title-content">Egor Kryvoi</div>
-                            <p class="content-about">
-                                My passion for programming began in early childhood. Since a young age, I've been exploring the intricacies of coding and developing my skills in this field. Programming has become not only a hobby for me but also a way of expressing myself and pursuing professional growth.
-                            </p>
-                            <p class="content-about">
-                                In addition to coding, I enjoy watching content on the Twitch platform. I often spend time following my favorite streamers and discovering new games and technologies. Twitch has become not only a source of entertainment for me but also an inspiration for creating my own projects related to gaming and streaming.
-                            </p>
-                            <p class="content-about">
-                                Outside of my digital pursuits, I relish spending time outdoors with friends, exploring the surrounding nature, and being active in the fresh air. Despite my proficiency in four languages, including advanced levels.
-                            </p>
-                            <a href="https://www.instagram.com/dshigit17/" class="content-link" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100072679096032" class="content-link" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="content-link" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
-                        </div>
+                    <figcaption>Test language</figcaption>
                     </div>
-                </main>
-                
-</div>
+
+                    <div class="skill-card">
+                        <div class="skill-minicontainer">
+                        <img src="" alt="skill 1">
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    <figcaption>Test language</figcaption>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-minicontainer">
+                        <img src="" alt="skill 1">
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    <figcaption>Test language</figcaption>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-minicontainer">
+                        <img src="" alt="skill 1">
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    <figcaption>Test language</figcaption>
+                    </div>
+                </div>
+            </div>
             <!-- Footer -->
-            <footer class="col-sm-12">
-                <hr>
-                <div class="container-media-copy">
+            <footer>
                     <div class="copyright">&copy; 2023-2024. All rights reserved.<br>Powered by <a href="https://egorkryvoi.pl">egorkryvoi.pl</a></div>
                     
                     <div class="social-media">
@@ -162,9 +168,8 @@
                         <a href="https://www.instagram.com/dshigit17/" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=100072679096032" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
                         <a href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
-                        <a href="https://twitter.com/dshigit17" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
                     </div>
-                </div>
+
             </footer>
         </div>
     </div>
@@ -173,6 +178,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
