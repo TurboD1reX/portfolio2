@@ -1,5 +1,6 @@
  *{
     font-family: "Sora", sans-serif;
+    scrollbar-width:thin;
 
  }
 
@@ -15,7 +16,9 @@
     display: block;
     height: calc(4px * 3 + 11px * 2);
   }
-  
+  img{
+    vertical-align:middle;
+  }
   .bar {
     position: absolute;
     left: 0;
@@ -99,10 +102,14 @@ nav {
 }
 nav img {
     max-height: 55px;
-    margin: 1.5rem 0 0 20rem;
+    margin:  0 0 0 20rem;
 
 }
-
+.brand-img{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+}
 .navbar-toggler{
     color:White;
 }
@@ -120,6 +127,7 @@ nav img {
     background-color: white;
     text-decoration: none;
     transition:ease 0.3s;
+
 }
 .cv-download:hover {
     background-color: #e83144;
@@ -152,12 +160,6 @@ nav img {
         
       }
 
-
-
-
-
-
-
 .main-container{
     margin:200px auto !important;
     display:flex;
@@ -165,7 +167,8 @@ nav img {
 
 }
 .main-container::before{
-    content:"";
+    content:'';
+    z-index: -1;
     top:400px;
     left:300px;
     background-color: transparent;
@@ -211,7 +214,7 @@ transition: ease 0.3s;
     color: white;
   }
 .main-image{
-    height:500px;
+height:500px;
 border-radius:50px;
 transform: rotate(5deg);
 transition: ease 0.3s;
@@ -219,7 +222,7 @@ border:3px solid white;
 }
 .main-image:hover{
     transform:rotate(0deg);
-    border:3px solid #333;
+    border-color:#333;
     transition: ease 0.3s;
 
 }
@@ -228,6 +231,7 @@ border:3px solid white;
 
 .project-container{
     background-color: #f8e7e9;
+
 }
 .sub-title{
     width:fit-content;
@@ -236,9 +240,19 @@ border:3px solid white;
     margin:30px auto 0px auto!important;
 }
 .title{
-margin:0px auto 15px auto !important;
+font-weight: 600;
+margin:5px auto 15px auto !important;
 font-size:60px;
 width:fit-content;
+position: relative;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent !important;
+background-image: linear-gradient(to right,#e83144,black) !important;
+
+}
+.title::before{
+  content:'';
+
 }
 .under-title-projects{
     width:600px;
@@ -246,32 +260,146 @@ width:fit-content;
 margin:10px auto 60px auto !important;
 }
 .projects{
-
+ 
 display: grid;
-grid-template-columns: repeat(2, auto);
+grid-template-columns: repeat(3,399.5px);
 grid-gap: 25px;
-margin:20px auto !important;
+margin:20px auto 75px auto!important;
 }
-
+.project-card{
+  border-radius: 10px;
+  padding:20px;
+  background-color: #202424 !important;
+  
+}
+.title-project{
+width:fit-content;
+margin-left:15px;
+color:white;
+position: relative;
+}
 .img-project{
-    padding: 36px 36px 0 36px;
-    background-color: black;
-height:470px;
-width:550px;
+height:200px;
+margin:auto auto !important;
+ 
+}
+.title-project::before{
+  content: '';
+  background-color: white;
+  height:7px;
+  position: absolute;
+  border-radius:100px;
+  width:7px;
+  top:12px;
+  left:-15px;
 
 }
-.decription-project{
+.content-box{
+margin:30px 0 10px 0;
+display: flex !important;
+justify-content: space-between;
+align-items: center;
+}
+
+.button-project-view{
+background-color: transparent !important;
+color:white;
+padding: 1em 2em;
+border:1px solid gray;
+border-radius:1000px;
+transition: ease 0.35s;
+}
+.button-project-view:hover{
+  background-color:#e83144 !important;
+  color:black;
+  border-color:black;
+  transition: ease 0.35s;
 
 }
 
 
+.skills-container{
+  height:75vh !important;
+
+  position: relative;
+}
+.skills-container::before{
+    content:'';
+    z-index: -1;
+    top:350px;
+    right:600px;
+    background-color: transparent;
+    border-radius: 50em;
+    box-shadow: 0px 0px 550px 80px #e83144;
+    position: absolute;
+
+}
+.skills{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin:10em auto !important;
+  gap:75px;
+}
+
+.skill-minicontainer{
+  background-color: #e83143c2;
+  padding:30px;
+  filter:grayscale(100%);
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.skill-minicontainer:hover{
+  transition: 0.5s ease;
+  filter:grayscale(0%);
+  
+}
+
+.skill-minicontainer > img{
+  height:100px;
+  color:white;
+}
+.skill-percentage{
+  margin:20px auto 0 auto !important;
+  color:white;
+  font-size: 20px;
+  width: fit-content;
+
+}
+.skill-card > figcaption {
+  font-size:25px;
+  width: fit-content;
+  margin:30px auto 0 auto !important;
+  color:#e83144
+}
 
 
+.education-container{
+  background-color: #f8e7e9;
+  height:125vh;
+}
+.temporary-education{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:25em;
+}
+.container-education{
 
+}
+.education-point{
+margin:50px auto!important;
+background-color: #ad454f;
+color:white;
+padding:1em 2em;
+border-radius:5px;
+}
+.education-title{
+font-size:25px;
+}
+.education-place{
 
-
-
-
+}
   @keyframes blink-caret {
     from, to {
       border-color: transparent;
@@ -280,7 +408,6 @@ width:550px;
       border-color: #333;
     }
   }
-
 
 
 
