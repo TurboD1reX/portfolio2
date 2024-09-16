@@ -424,7 +424,6 @@ font-size:25px;
 
 
 footer{
-    height: 100px;
     display: flex;
     background-color: white;
     justify-content: space-between !important;
@@ -437,15 +436,18 @@ footer{
     color: #2E2723;
     margin: 0 20px;
     transition: ease 0.3s;
+    height:fit-content;
 }
-
+.social-media{
+  height:fit-content;
+  
+}
 .footer-box:hover {
     color: #e83144;
 }
 .copyright{
-
     color:gray;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:fit-content;
     font-weight: 100;
 }
 .copyright a {
