@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact ⋄ Programmer ⋄ Junior ⋄ Portfolio </title>
+    <title>Contact ⋄ Portfolio </title>
     
     <link rel="icon" type="image/x-icon" href="img/bigElogo.png">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,1000;1,9..40,100;1,9..40,400;1,9..40,600;1,9..40,700;1,9..40,800&family=Exo+2:wght@600&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:wght@600&family=Teko:wght@300;400;500;600;700&family=Timmana&family=Titan+One&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +30,7 @@
         <div class="row">
             <!-- Navigation Bar --> 
             <nav class="navbar navbar-expand-lg navbar-light position-fixed shadow p-0 mb-5 " style="z-index:20">
-                <a class="navbar-brand brand-img" href="index.html" ><img src="img/logoname.png" class="d-inline-block align-bottom" alt=""></a>
+                <a class="navbar-brand brand-img" href="index.html" ><img src="img/logo.png" class="d-inline-block align-bottom" alt=""> <div class="nav-gmail">gor.kryvoi@gmail.com</div></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="navbar-icon">
                         <input type="checkbox" id="checkbox">
@@ -46,18 +49,18 @@
                         </li>
                    
                         <li class="nav-item display-flex ">
-                            <a href="index.html#projects" class="nav-link text-black">Projects</a>
+                            <a href="#projects" class="nav-link text-black">Projects</a>
                         </li>
                     
                         <li class="nav-item display-flex ">
-                            <a class="nav-link text-black">About</a>
+                            <a href="#about" class="nav-link text-black">About</a>
     
                    
                         <li class="nav-item display-flex  ">
                             <a href="contact.html" class="nav-link text-black">Contact</a> 
                         </li>
                         <li class="nav-item d-flex p-2" >
-                            <a class="cv-download" onclick="IncAttentionCV()">Download CV</a>
+                            <button type="button" class="cv-download" onclick="IncAttentionCV()">Download CV</button>
                         </li>
                     </ul>
             </div>
@@ -96,25 +99,24 @@
                 <label for="text">Content</label>
             </div>
             <div class="d-flex">
-                <input type="reset" value="reset">
-                <input type="submit" value="submit">
+                
+                <input type="submit" value="Send">
 </div>
             </form>
         </main>
             <!-- Footer -->
-            <footer class="col-sm-12">
-                <hr>
-                <div class="container-media-copy">
-                    <div class="copyright">&copy; 2023-2024. All rights reserved.<br>Powered by <a href="egorkryvoi.pl">egorkryvoi.pl</a></div>
-                    <div class="social-media">
-                        <a href="https://github.com/TurboD1reX" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a>
-                        <a href="https://www.instagram.com/dshigit17/" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100072679096032" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
-                        <a href="https://twitter.com/dshigit17" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                    </div>
+            <footer>
+            
+                <div class="copyright">&copy; 2023-2024. All rights reserved.<br>Powered by <a href="">egorkryvoi.pl</a></div>
+                
+                <div class="social-media">
+                    <a href="https://github.com/TurboD1reX" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a>
+                    <a href="https://www.instagram.com/dshigit17/" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072679096032" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
                 </div>
-            </footer>
+
+        </footer>
         </div>
     </div>
     
