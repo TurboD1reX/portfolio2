@@ -232,27 +232,23 @@ form::before{
 
 
 
-  input[type=submit]{
+  .button-submit{
     padding:0.5em 4em;
     background-color:#e83144;
     border:none;
     border-radius: 30em;
     color:white;
-    margin:0 0 20px 0 !important;
+    text-transform: uppercase;
+    margin:0 auto 20px auto!important;
     cursor:pointer !important;
     transition:ease 0.5s;
+    position: relative;
+  }
 
-  }
-  input[type=submit]:hover{
-    transform:scale(0.95);
-    transition:ease 0.5s;
-  }
-  input[type=submit]:focus{
-    border:1px solid #e83144;
-  }
+
 
 .input {
-    margin: 1em 0 ;
+    margin: 2em 0 ;
     position: relative;
   }
   
