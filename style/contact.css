@@ -347,7 +347,7 @@ font-size:larger;
 }
 
 .social-media{
-margin:50px 50px 0 50px !important;
+  margin:50px 50px 0 50px !important;
   height:fit-content;
 }
 .footer-box {
@@ -379,12 +379,7 @@ margin:50px 50px 0 50px !important;
   
   
 @media only screen and (max-width: 1023px) {
-  #navbarSupportedContent{
-    margin-left:0px;
-  }
-.display-flex{
-    display: block !important;
-}
+
 
 .alert>div>span {
     font-size:25px;

@@ -1,8 +1,8 @@
  *{
     font-family: "Sora", sans-serif;
     scrollbar-width:thin;
-
  }
+
 body{
   position: relative;
 }
@@ -104,19 +104,13 @@ nav {
 }
 nav img {
     max-height: 55px;
-    margin:  0 0 0 20rem;
 
 }
 .brand-img{
-  display: flex !important;
-  justify-content: center !important;
   align-items: center;
 }
 .navbar-toggler{
     color:White;
-}
-#navbarSupportedContent{
-    margin-left:100px;
 }
 
 .cv-download {
@@ -138,10 +132,6 @@ nav img {
     transition:ease 0.3s;
 }
 
-
-.display-flex{
-    display: flex !important;
-}
 .alert>div>span {
     font-size:20px;
     font-weight: 900;
@@ -164,9 +154,7 @@ nav img {
 
 .main-container{
     margin:200px auto !important;
-    display:flex;
-    justify-content: center;
-
+    display: flex !important;
 }
 .main-container::before{
     content:'';
@@ -187,8 +175,8 @@ nav img {
     border-right: 0.15em solid #333;
     white-space: nowrap;
     margin: 0;
-height:65px;
-font-weight: 900;
+    height:65px;
+    font-weight: 900;
     font-size:52px;
     animation:  blink-caret 0.75s step-end infinite;
   }
@@ -257,16 +245,9 @@ background-image: linear-gradient(to right,#e83144,black) !important;
     text-align: center;
 margin:10px auto 60px auto !important;
 }
-.projects{
- 
-display: grid;
-grid-template-columns: repeat(3,399.5px);
-grid-gap: 25px;
-margin:20px auto 75px auto!important;
-}
+
 .project-card{
   border-radius: 10px;
-  padding:20px;
   background-color: #202424 !important;
   
 }
@@ -277,11 +258,7 @@ color:white;
 position: relative;
 font-size:26px;
 }
-.img-project{
-height:200px;
-margin:auto auto !important;
- 
-}
+
 .title-project::before{
   content: '';
   background-color: white;
@@ -303,7 +280,7 @@ align-items: center;
 .button-project-view,.live-preview{
 background-color: transparent !important;
 color:white;
-padding: 1em 2em;
+
 border:1px solid gray;
 border-radius:1000px;
 transition: ease 0.35s;
@@ -319,7 +296,6 @@ transition: ease 0.35s;
 
 
 .skills-container{
-  height:75vh !important;
 
   position: relative;
 }
@@ -334,17 +310,11 @@ transition: ease 0.35s;
     position: absolute;
 
 }
-.skills{
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  margin:10em auto !important;
-  gap:75px;
-}
+
 
 .skill-minicontainer{
   background-color: #e83143c2;
-  padding:30px;
+
   filter:grayscale(100%);
   border-radius: 10px;
   transition: 0.5s ease;
@@ -355,15 +325,12 @@ transition: ease 0.35s;
   
 }
 
-.skill-minicontainer > img{
-  height:100px;
-  color:white;
-}
+
 .skill-percentage{
-  margin:20px auto 0 auto !important;
+  margin-top:20px !important;
   color:white;
   font-size: 20px;
-  width: fit-content;
+text-align: center !important;
 
 }
 .skill-card > figcaption {
@@ -374,32 +341,7 @@ transition: ease 0.35s;
 }
 
 
-.education-container{
-  background-color: #f8e7e9;
-  height:125vh;
-}
-.temporary-education{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap:25em;
-}
-.container-education{
 
-}
-.education-point{
-margin:50px auto!important;
-background-color: #ad454f;
-color:white;
-padding:1em 2em;
-border-radius:5px;
-}
-.education-title{
-font-size:25px;
-}
-.education-place{
-
-}
 
 
 
@@ -414,7 +356,7 @@ overflow-y: scroll !important;
 background-color: rgba(0,0,0,0.7);
 z-index: 1024;
 animation: fadeIn 0.5s;
-position: fixed; /* or absolute, depending on your needs */
+position: fixed;
 max-height: 100vh; 
 overflow-y: scroll;
 display: none;
@@ -496,7 +438,6 @@ color:black;
 
 .project-info {
   display: none;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -568,28 +509,29 @@ footer{
     display: flex;
     background-color: white;
     justify-content: space-between !important;
-}
-
-
-.footer-box {
+  }
+  
+  
+  .footer-box {
     font-size: 30px;
     cursor: pointer;
-    color: #2E2723;
     margin: 0 20px;
     transition: ease 0.3s;
     height:fit-content;
-}
-.social-media{
-  height:fit-content;
+    color: #2E2723;
+  }
+  .social-media{
+    margin:20px 50px !important;
+    height:fit-content;
 
 }
 .footer-box:hover {
     color: #e83144;
 }
 .copyright{
+  margin:20px 50px !important;
     color:gray;
     height:fit-content;
-    font-weight: 100;
 }
 .copyright a {
     cursor:pointer;
@@ -601,13 +543,7 @@ footer{
 
 
 
-@media only screen and (max-width: 1023px) {
-    #navbarSupportedContent{
-        margin-left:0px;
-      }
-    .display-flex{
-        display: block !important;
-    }
+@media only screen and (max-width: 780px) {
 
     .alert>div>span {
         font-size:25px;
@@ -620,7 +556,7 @@ footer{
         font-size:25px;
         margin:0px 10px;
     }
-
+    
     nav img{
         margin-left:30px;
     }
@@ -636,9 +572,24 @@ footer{
     }
     footer{
         height: fit-content;
-        bottom:-100px;
     }
-
+    .skill-minicontainer{
+      width:200px;
+      margin:auto;
+    }
+    .typewriter{
+      font-size:30px;
+      height: 40px;
+    }
+    .main-image{
+      height: fit-content;
+    }
+    .main-container{
+      margin:50px auto !important;
+  }
+  .nav-gmail{
+    display:none;
+  }
 }
 
 
