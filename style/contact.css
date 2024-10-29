@@ -212,12 +212,11 @@ form::before{
   width:1px;
   height:1px;
   border-radius:10px;
-  background-color: #e83144;
   position: absolute;
   top:190px;
   right:78vh;
   z-index: -1;
-  box-shadow:0 0 75px 25px #e83144;
+  box-shadow:0 0 75px 25px #e831438c;
 }
 #form-input{
     height:120px;

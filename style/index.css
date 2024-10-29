@@ -114,22 +114,22 @@ nav img {
 }
 
 .cv-download {
-    padding: 3px 20px;
-    margin:10px 0;
+    padding: 8px 25px;
+
     color: #e83144;
-    text-align:center;
+
     border: 2px solid #e83144;
-    border-radius: 10px;
+    border-radius: 3rem;
     background-color: white;
     text-decoration: none;
-    transition:ease 0.3s;
+    transition:ease 0.175s;
 
 }
 .cv-download:hover {
     background-color: #e83144;
     color: white;
     border: 2px solid #e83144;
-    transition:ease 0.3s;
+    transition:ease 0.175s;
 }
 
 .alert>div>span {
@@ -332,10 +332,8 @@ transition: ease 0.35s;
 text-align: center !important;
 
 }
-.skill-card > figcaption {
-  font-size:25px;
+.skill-card > h5{
   width: fit-content;
-  margin:30px auto 0 auto !important;
   color:#e83144
 }
 
@@ -539,14 +537,21 @@ footer{
 .justify-content-space-around{
   justify-content: space-around !important;
 }
-@media only screen and (max-width: 1024px) {
-.typewriter{
-  font-size:30px;
-  height: 30px;
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  .typewriter {
+    font-size: 30px;
+    height: 35px; 
+  }
 }
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .typewriter {
+    font-size: 25px;
+    height: 32px; 
+  }
 }
-@media only screen and (max-width: 767px) {
-
+@media only screen and (max-width: 768px) {
+  
+  
     .alert>div>span {
         font-size:25px;
         font-weight: 900;
@@ -580,12 +585,10 @@ footer{
       margin:auto;
     }
     .typewriter{
-      font-size:30px;
-      height: 40px;
+      font-size:36px;
+      height: 44px;
     }
-    .main-image{
-      height: fit-content;
-    }
+
     .main-container{
       margin:50px auto !important;
   }
