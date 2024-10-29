@@ -70,10 +70,6 @@ img{
   transition-delay: 0s,calc(0s + 0.35s);
 }
 
-
-
-
-
 nav {
   background-color: white;
 }
@@ -103,39 +99,53 @@ nav {
 }
 nav img {
   max-height: 55px;
-  margin:  0 0 0 20rem;
 
 }
 .brand-img{
-display: flex !important;
-justify-content: center !important;
 align-items: center;
 }
 .navbar-toggler{
   color:White;
 }
-#navbarSupportedContent{
-  margin-left:100px;
-}
 
 .cv-download {
-  padding: 3px 20px;
-  margin:10px 0;
+  padding: 8px 25px;
+
   color: #e83144;
-  text-align:center;
+
   border: 2px solid #e83144;
-  border-radius: 10px;
+  border-radius: 3rem;
   background-color: white;
   text-decoration: none;
-  transition:ease 0.3s;
+  transition:ease 0.175s;
 
 }
 .cv-download:hover {
   background-color: #e83144;
   color: white;
   border: 2px solid #e83144;
-  transition:ease 0.3s;
+  transition:ease 0.175s;
 }
+
+.alert>div>span {
+  font-size:20px;
+  font-weight: 900;
+  color:#e83144;
+  float:right;
+  cursor:pointer;
+  margin:-3px 12px;
+  float:right;
+  
+}
+  .attention-cv {
+      position:fixed;
+      top: 80%;
+      width:100%;
+      left: 0px;
+      transform: translate(-100%);
+      transition:ease 0.3s;
+      
+    }
 
 
 .display-flex{
@@ -219,7 +229,7 @@ form::before{
   box-shadow:0 0 75px 25px #e831438c;
 }
 #form-input{
-    height:120px;
+    min-height:100px;
     text-align:unset!important;
 }
 
@@ -270,7 +280,7 @@ form::before{
     transition: all 0.3s ease;
     color:#a3a3a3;
   }
-  
+
   .input :is(input:focus,textarea:focus, textarea:valid, input:valid)~label {
     transform: translateY(-50%) scale(.8);
     margin: 0em;
@@ -338,34 +348,32 @@ font-size:larger;
   }
 
 
+
   footer{
-
-    display: flex;
     background-color: white;
-    justify-content: space-between !important;
-}
-
-.social-media{
-  margin:50px 50px 0 50px !important;
-  height:fit-content;
-}
-.footer-box {
+  }
+  
+  
+  .footer-box {
     font-size: 30px;
     cursor: pointer;
-    color: #2E2723;
     margin: 0 20px;
     transition: ease 0.3s;
-}
+    height:fit-content;
+    color: #2E2723;
+  }
+  .social-media{
+    margin:20px 50px !important;
+    height:fit-content;
 
+}
 .footer-box:hover {
     color: #e83144;
 }
 .copyright{
-  margin:50px  50px 0 50px!important;
-  height:fit-content;
+  margin:20px 50px !important;
     color:gray;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 100;
+    height:fit-content;
 }
 .copyright a {
     cursor:pointer;
@@ -373,7 +381,10 @@ font-size:larger;
     text-decoration: underline;
 }
       
-      
+
+.justify-content-space-around{
+  justify-content: space-around !important;
+}
   
   
   

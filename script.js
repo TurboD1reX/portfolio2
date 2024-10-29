@@ -67,11 +67,11 @@ elem.scrollIntoView();
 });
 
 document.getElementById("about-anchor").addEventListener('click', function(){
-  var elem = document.getElementById(".about");
+  var elem = document.querySelector(".main-container");
   elem.scrollIntoView();
 });
 document.getElementById("skill-anchor").addEventListener('click', function(){
-  var elem = document.getElementById(".skills-container");
+  var elem = document.querySelector(".skills-container");
   elem.scrollIntoView();
 });
 
