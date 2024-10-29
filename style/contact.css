@@ -349,6 +349,29 @@ font-size:larger;
 
 
 
+
+.submit-done{
+text-align:center;
+margin:150px auto;
+}
+i{
+font-size: xx-large;
+color:rgb(39, 151, 39);
+}
+.content-submit-done{
+font-size:40px;
+color:black;
+}
+.submit-done > a{
+font-size:20px;
+color:rgb(99, 99, 99);
+
+}
+
+
+
+
+
   footer{
     background-color: white;
   }
