@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home ⋄ Portfolio </title>
+    <title>Contact ⋄ Portfolio </title>
     
     <link rel="icon" type="image/x-icon" href="img/bigElogo.png">
     
@@ -28,47 +28,47 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light position-fixed shadow p-0 mb-5" style="z-index:2">
-    <div class="container">
-    <a class="navbar-brand brand-img d-flex justify-content-center" href="index.html">
-      <img src="img/logo.png" class="d-inline-block align-bottom" alt="">
-      <div class="nav-gmail">gor.kryvoi@gmail.com</div>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="navbar-icon">
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox" class="toggle">
-                <div class="bar bar--top"></div>
-                <div class="bar bar--middle"></div>
-                <div class="bar bar--bottom"></div>
-            </label>
-        </div>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link text-black">Home</a>
-        </li>
-        <li class="nav-item">
-          <a id="project-anchor" class="nav-link text-black">Projects</a>
-        </li>
-        <li class="nav-item">
-            <a id="skill-anchor" class="nav-link text-black">Skills</a>
-          </li>
-        <li class="nav-item">
-          <a id="about-anchor" class="nav-link text-black">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link text-black">Contact</a>
-        </li>
-        <li class="nav-item mt-2 ">
-          <button type="button" class="cv-download " onclick="IncAttentionCV()">Download CV</button>
-        </li>
-      </ul>
-    </div>
-</div>
-  </nav>
+            <!-- Navigation Bar --> 
+            <nav class="navbar navbar-expand-lg navbar-light position-fixed shadow p-0 mb-5" style="z-index:2">
+                <div class="container">
+                <a class="navbar-brand brand-img d-flex justify-content-center" href="index.html">
+                  <img src="img/logo.png" class="d-inline-block align-bottom" alt="">
+                  <div class="nav-gmail">gor.kryvoi@gmail.com</div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="navbar-icon">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="toggle">
+                            <div class="bar bar--top"></div>
+                            <div class="bar bar--middle"></div>
+                            <div class="bar bar--bottom"></div>
+                        </label>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link text-black">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="project-anchor" class="nav-link text-black">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="skill-anchor" class="nav-link text-black">Skills</a>
+                      </li>
+                    <li class="nav-item">
+                      <a id="about-anchor" class="nav-link text-black">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="contact.html" class="nav-link text-black">Contact</a>
+                    </li>
+                    <li class="nav-item mt-2 ">
+                      <button type="button" class="cv-download " onclick="IncAttentionCV()">Download CV</button>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+              </nav>
             
             
             <!-- Main Section -->
@@ -80,51 +80,50 @@
                     <div class="mail"><i class="fa fa-envelope"></i><span>Mail me at<br><b style="color:#e83144">egor.kryvoi@gmail.com</b></span></div>
             </section>
             <!-- Form-->
-            <form id='contact-form' class="col-sm-11 col-md-3" action="https://formsubmit.io/send/egor.kryvoi@gmail.com" method="POST">
+            <form id='contact-form' class="col-sm-11 col-md-3" action="php/contact.php" method="POST">
                 <div class="title-form">Get in touch</div>
             <div class="input">
-                <input type="text"name="text" required autocomplete="off">
+                <input type="text"name="first_name" required autocomplete="off">
                 <label for="name"><i class="bi bi-person"></i> Name</label>
             </div>
             <div class="input">
-                <input type="email" name="email" required autocomplete="off">
+                <input type="email" name="e-mail" required autocomplete="off">
                 <label for="email"><i class="bi bi-envelope"></i> Email</label>
             </div> 
             <div class="input">
-                <textarea type="text" id="form-input" name="message" required autocomplete="off"></textarea>
+                <textarea type="text" id="form-input" name="content" required autocomplete="off"></textarea>
                 <label for="text"><i class="bi bi-chat"></i> Message</label>
             </div>
             <div class="d-flex">
                 
                 <button type="submit" class="button-submit">Send message <i class="bi bi-arrow-right"></i></button>
 </div>
-            <input name="_redirect" type="hidden" id="name" value="redirect.html">
             </form>
         </main>
-            <!-- Footer -->
-            <footer>
-                <div class="container">
-                <hr>
-                <div class="d-flex col-sm-12 col-md-12 col-lg-12 justify-content-space-around">
-                    <div class="copyright">&copy; 2023-2025. All rights reserved.<br>Powered by <a href="https://egorkryvoi.pl">egorkryvoi.pl</a></div>
-                    
-                    <div class="social-media">
-                        <a target="_blank" href="https://github.com/TurboD1reX" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/dshigit17/" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100072679096032" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
-                    </div>
+        <footer>
+            <div class="container">
+            <hr>
+            <div class="d-flex col-sm-12 col-md-12 col-lg-12 justify-content-space-around">
+                <div class="copyright">&copy; 2023-2025. All rights reserved.<br>Powered by <a href="https://egorkryvoi.pl">egorkryvoi.pl</a></div>
+                
+                <div class="social-media">
+                    <a target="_blank" href="https://github.com/TurboD1reX" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/dshigit17/" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100072679096032" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCnPrZoR7Rq4rnRlaWVN7pIw" class="footer-box" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
                 </div>
+            </div>
 </div>
-            </footer>
-        </div>
+        </footer>
     </div>
-    
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
+

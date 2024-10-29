@@ -1,0 +1,29 @@
+* {
+    font-family: 'Archivo Black', sans-serif; 
+}
+
+
+
+
+.submit-done{
+text-align:center;
+margin:150px auto;
+}
+i{
+font-size: xx-large;
+color:rgb(39, 151, 39);
+}
+.content-submit-done{
+font-size:40px;
+color:black;
+}
+.submit-done > a{
+font-size:20px;
+color:rgb(99, 99, 99);
+
+}
+<div class='submit-done col-sm-12 col-md-8'>
+<i class='fa fa-check-circle-o' style="font-size:120px"></i>
+<div class="content-submit-done">Your message has been sent. Thank you!</div>
+<a href="index.html">Back to homepage.</a>
+</div>
